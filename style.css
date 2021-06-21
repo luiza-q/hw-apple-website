@@ -121,6 +121,29 @@ span {
     color: whitesmoke;
 }
 
+.wwdc21 {
+    background-image: url(/images/promo_wwdc21__p6pprzl4sjey_large.jpg);
+    background-size: 140%;
+    background-position: center;
+}
+
+.tv-4k {
+    background-image: url(/images/promo_tile_tv4k__cbz6fpnn6kz6_large.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.music {
+    background-image: url(/images/promo_spatial_audio__deu7d4c77yc2_large.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.tv-plus {
+    background-image: url(/images/promo_morning_show__yubzhh5l602u_large.jpg);
+    background-position: center center;
+    background-size: 140%;
+}
 
 
 
