@@ -40,6 +40,7 @@ li a{
     font-size: 14px;
     height: 50px;
 }
+/* highlighted products */
 
 .iphone-12 {
     margin:0;
@@ -52,6 +53,15 @@ li a{
 
 .iphone-12-pro {
     background-image: url(/images/iphone_12_pro_us__e5oyysg4k0ya_large.jpg);
+    height: 100vh;
+    background-size: auto;
+    background-position: center top;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.ipad-pro {
+    background-image: url(/images/hero_ipad_pro__gl982dtu49im_large.jpg);
     height: 100vh;
     background-size: auto;
     background-position: center top;
@@ -78,11 +88,17 @@ span {
     align-items: center;
 }
 
+
+/* other products - grid */
+
 .other-products {
     display: grid;
     grid-template-columns: 45% 45%;
     grid-template-rows: 30% 30% 30%;
     gap: 10px;
+
+
+/* media queries */
     
 @media screen and (max-width: 733px) {
     .iphone-12 {
@@ -103,6 +119,3 @@ span {
         font-size: 48px;
     }
 }
-    
-
-
