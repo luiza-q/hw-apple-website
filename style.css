@@ -46,7 +46,8 @@ li a{
     margin:0;
     background-image: url(/images/iphone_12_updated__jepm2xpxncuy_large.jpg);
     height: 100vh;
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: top center;
     text-align: center;
 }
@@ -68,6 +69,7 @@ li a{
     text-align: center;
     color: whitesmoke;
 }
+
 h1 {
     font-size: 56px;
     margin-bottom: 0;
@@ -93,16 +95,39 @@ span {
 
 .other-products {
     display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 30% 30% 30%;
-    gap: 10px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    align-items: center;
+   }
+
+.item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imac {
+    background-image: url(/images/promo_imac__crg641tip4q6_large.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.watch {
+    background-image: url(/images/promo_watch_series_6_lte__f8lrasjnry2y_large.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: whitesmoke;
+}
+
+
 
 
 /* media queries */
-    
 @media screen and (max-width: 733px) {
     .iphone-12 {
-        background-image: url(/images/iphone_12_updated__jepm2xpxncuy_small_2x.jpg);
+        background-image: url(/images/iphone_12_updated__jepm2xpxncuy_small.jpg);
         height: 100vh;
         background-size: cover;
         background-position: top center;
@@ -111,8 +136,15 @@ span {
     .iphone-12-pro {
         background-image: url(/images/iphone_12_pro_us__e5oyysg4k0ya_small.jpg);
         height: 100vh;
-        background-size: auto;
+        background-size: cover;
         background-position: center top;
+    }
+
+    .ipad-pro {
+        background-image: url(/images/hero_ipad_pro__gl982dtu49im_small.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
     }
 
     h1 {
