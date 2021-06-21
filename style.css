@@ -78,6 +78,12 @@ span {
     align-items: center;
 }
 
+.other-products {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 30% 30% 30%;
+    gap: 10px;
+    
 @media screen and (max-width: 733px) {
     .iphone-12 {
         background-image: url(/images/iphone_12_updated__jepm2xpxncuy_small_2x.jpg);
