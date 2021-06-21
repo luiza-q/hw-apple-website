@@ -50,6 +50,8 @@ li a{
     background-size: cover;
     background-position: top center;
     text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 .iphone-12-pro {
@@ -59,6 +61,8 @@ li a{
     background-position: center top;
     text-align: center;
     color: whitesmoke;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 .ipad-pro {
@@ -68,6 +72,8 @@ li a{
     background-position: center top;
     text-align: center;
     color: whitesmoke;
+    margin-bottom: 20px;
+    padding-top: 20px;
 }
 
 h1 {
@@ -97,11 +103,21 @@ span {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
-    gap: 20px;
+    gap: 15px;
     align-items: center;
    }
 
 .item {
+    height: 500px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.wwdc21 {
+    height: 500px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -123,8 +139,9 @@ span {
 
 .wwdc21 {
     background-image: url(/images/promo_wwdc21__p6pprzl4sjey_large.jpg);
-    background-size: 140%;
+    background-size: cover;
     background-position: center;
+    color:whitesmoke;
 }
 
 .tv-4k {
@@ -137,12 +154,30 @@ span {
     background-image: url(/images/promo_spatial_audio__deu7d4c77yc2_large.jpg);
     background-position: center center;
     background-size: cover;
+    color: whitesmoke;
 }
 
 .tv-plus {
     background-image: url(/images/promo_morning_show__yubzhh5l602u_large.jpg);
     background-position: center center;
-    background-size: 140%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+}
+
+h5 {
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
@@ -172,5 +207,50 @@ span {
 
     h1 {
         font-size: 48px;
+    }
+
+    .other-products {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, auto);
+        gap: 15px;
+        align-items: center;
+   }
+    
+}
+
+@media screen and (max-width: 1068px) {
+    .imac {
+        background-image: url(/images/promo_imac__crg641tip4q6_small.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .watch {
+        background-image: url(/images/promo_watch_series_6_lte__f8lrasjnry2y_small.jpg);
+        background-size: cover;
+        background-position: center center;
+        color: whitesmoke;
+    }
+
+    .tv-4k {
+        background-image: url(/images/promo_tile_tv4k__cbz6fpnn6kz6_small.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .music {
+        background-image: url(/images/promo_spatial_audio__deu7d4c77yc2_small.jpg);
+        background-position: center center;
+        background-size: cover;
+        color: whitesmoke;
+    }
+    
+    .tv-plus {
+        background-image: url(/images/promo_morning_show__yubzhh5l602u_small.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: whitesmoke;
     }
 }
